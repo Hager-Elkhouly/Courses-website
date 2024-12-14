@@ -1,0 +1,260 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  height: 100%;
+  overflow-x: hidden;
+}
+.navbar {
+  background: linear-gradient(to right, #6a0dad, #8a2be2);
+  padding: 15px 0;
+}
+.navbar a {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar a:hover {
+  background-color: #6a0dad;
+  color: #fff;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.navbar-nav {
+  text-align: center;
+}
+/* ===== hero section ====== */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #6a0dad, #8a2be2);
+   
+  padding: 60px 20px;
+
+  border-bottom: 2px solid #fff;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+.hero-section p {
+  text-align: center;
+  color: #fff;
+}
+.hero-section a {
+  display: block;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 10px 20px; /* تصغير حجم الزر */
+}
+.hero-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+ .btn{
+  width: 160px;
+  border-radius: 20px;
+  background-color: #f4f7fc;
+  color: #8a2be2;
+  border: #6a0dad 1px solid;
+  
+ }
+ .btn:hover
+ {
+  background-color: #6a0dad;
+  color: #fff;
+
+ }
+/* card */
+/* يمكنك إضافة هذا الكود لتخصيص التنسيق أكثر */
+.card {
+  transition: transform 0.3s ease-in-out; /* تأثير عند التمرير */
+}
+.card-img-top{
+  height: 180px;
+  width: 60%;
+  margin: auto;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05); /* تكبير الكارت عند التمرير */
+}
+
+.card-body i {
+  font-size: 1.2rem;
+}
+
+.card-body .btn {
+  margin-top: 10px;
+}
+/*==== features=== */
+
+
+.container-fluid {
+  
+  background-image: url('./image/background-features.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  background-color: #c08ae7;
+  background-blend-mode: overlay;
+  color: white; /* النص باللون الأبيض */
+  padding: 50px 0; /* إضافة padding حول السكشن */
+}
+
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  background-color: transparent; /* إزالة الخلفية */
+  padding: 30px; /* padding حول الأيقونة */
+}
+
+/* تكبير الأيقونات */
+.fs-1 {
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* إضافة تأثير الـ hover */
+}
+
+/* إضافة تأثير Hover على الأيقونات */
+.icon-hover:hover {
+  transform: scale(1.2); /* تكبير الأيقونة عند المرور فوقها */
+  color: #f8f9fa; /* تغيير اللون إلى الأبيض الفاتح عند الـ hover */
+}
+
+/* النص باللون الأبيض */
+.text-white {
+  color: white;
+}
+
+/* إضافة مسافة بين الأيقونات */
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+/* إضافة مسافة تحت كل ميزة */
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+/* تنسيق العناوين */
+h3 {
+  font-weight: bold;
+}
+
+/* تنسيق النصوص */
+p {
+  font-size: 1.1rem;
+}
+/* ===== about section ===== */
+.about-section {
+  padding: 50px 20px;
+  background-color: #f4f7fc;
+  margin: 50px 0; /* إضافة مسافة بين الأقسام */
+}
+ h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8a2be2;
+}
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.about-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* contact */
+/* تصميم الفورم */
+.contact-form {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  color: #6a0dad;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* تحسين مظهر الحقول */
+.contact-form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+}
+
+.contact-form .form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* تصميم زر إرسال */
+.contact-form button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: #6a0dad;
+  border: 1px solid #6a0dad;
+
+}
+
+/* تحسين العرض في الشاشات الصغيرة */
+@media (max-width: 576px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+/* ===== footer ===== */
+.footer {
+  background-color: #6a0dad;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}

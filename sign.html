@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الكورسات</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* تخصيص الألوان */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        .form-title {
+            color: #6a0dad;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-control, .btn {
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #6a0dad;
+            border-color: #6a0dad;
+        }
+        .btn-primary:hover {
+            background-color: #8a2be2;
+            border-color: #8a2be2;
+        }
+    
+        .message {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">سجل الآن في كورسات البرمجة والتصميم</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">الاسم:</label>
+                <input type="text" class="form-control" id="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="text" class="form-control" id="phone" placeholder="أدخل رقم هاتفك" required>
+            </div>
+            <div class="form-group">
+                <label for="course">اختر الكورس:</label>
+                <select class="form-control" id="course" required>
+                    <option value="course1">كورس برمجة الويب</option>
+                    <option value="course2">كورس تصميم الجرافيك</option>
+                    <option value="course3">كورس تطوير التطبيقات</option>
+                    <option value="course4">كورس تعلم البرمجة بلغة بايثون</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">رسالة إضافية (اختياري):</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="أدخل أي تفاصيل إضافية إذا كنت ترغب في ذلك"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">سجل الآن</button>
+        </form>
+
+        <a  href="index.html" class="btn btn-primary  btn-block mt-3">رجوع</a>
+        <div class="message" id="successMessage">تم التسجيل بنجاح! سنقوم بالتواصل معك قريبًا.</div>
+    </div>
+
+    <script>
+        // Function to handle form submission
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('successMessage').style.display = 'block'; // Show success message
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none'; // Hide after few seconds
+            }, 3000);
+            // You can add more logic to send the form data to the server
+        });
+
+        // Function to handle back button click
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
